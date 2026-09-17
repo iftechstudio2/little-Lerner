@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning Book — Little Learner</title><meta name="description" content="A complete interactive Little Learner book page for kids.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="inner-page">
+<header class="site-header"><div class="site-nav"><a class="brand" href="index.html"><span class="brand-icon">🌈</span><span>Little Learner</span></a><button class="menu-btn" onclick="toggleMenu()">☰</button></div><nav id="siteMenu" class="site-menu"><a href="index.html">🏠 Home</a><a id="categoryNav" href="index.html">📚 Categories</a><a href="about.html">ℹ️ About</a><a href="contact.html">✉️ Contact</a></nav></header>
+<main class="book-page wrap">
+<div class="book-topbar"><a id="bookBack" class="back-link" href="index.html">← Back to books</a><span id="bookCategory" class="book-badge">📚 Learning Book</span></div>
+<article class="complete-book">
+<div id="bookCover" class="big-book-cover"></div>
+<div id="bookIntro"></div>
+<div class="lesson-block"><span class="eyebrow">STEP 1</span><h2>📖 Let's Learn</h2><div id="lessonContent"></div></div>
+<div class="lesson-block activity-block"><span class="eyebrow">STEP 2</span><h2>🧩 Try It Yourself</h2><div id="activityContent"></div></div>
+<div class="lesson-block"><span class="eyebrow">STEP 3</span><h2>🗣️ Say It & Remember It</h2><div id="speakContent"></div></div>
+<div class="lesson-block quiz"><span class="eyebrow">STEP 4</span><h2>⭐ Quick Check</h2><div class="q"><p id="question">What did you learn?</p><div id="answers" class="answers"></div><div id="feedback" class="feedback"></div></div><div class="score">Score: <span id="score">0</span> / 1</div><button class="retry" onclick="resetBookQuiz()">Try Again</button></div>
+<div class="finish-box">🎉 <h2>Great job, Little Learner!</h2><p>You finished this book. Come back anytime and practice again.</p><button class="primary-btn" onclick="speakCurrentBook()">🔊 Read This Book</button></div>
+</article>
+</main>
+<footer class="site-footer"><div class="footer-grid"><div><h3>🌈 Little Learner</h3><p>Learn, practice and have fun.</p></div><div><h3>Explore</h3><p><a href="index.html">Home</a><br><a id="footerCat" href="index.html">This category</a></p></div><div><h3>Parents</h3><p><a href="about.html">About</a><br><a href="contact.html">Contact</a><br><a href="privacy.html">Privacy</a></p></div></div><div class="copyright">© 2026 Little Learner · Built for curious young minds</div></footer>
+<script src="assets/app.js"></script><script>document.addEventListener('DOMContentLoaded',renderBookPage);</script>
+</body></html>
