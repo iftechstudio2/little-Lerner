@@ -1,66 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Little Learner — Kids Digital Learning Library</title>
-<meta name="description" content="A parent-friendly digital learning library for preschool and early learners: books, stories, phonics, numbers, quizzes, creativity and everyday learning.">
-<link rel="stylesheet" href="assets/style.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Little Learner — Kids Digital Learning Library</title><meta name="description" content="A parent-friendly digital learning library with books, stories, activities and practice for young learners."><link rel="stylesheet" href="assets/style.css"></head>
 <body>
-<header class="site-header">
-  <div class="site-nav">
-    <a class="brand" href="index.html"><span class="brand-icon">🌈</span><span>Little Learner</span></a>
-    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
-  </div>
-  <nav id="siteMenu" class="site-menu">
-    <a href="index.html">🏠 Home</a><a href="#library">📚 Library</a><a href="#popular">⭐ Popular</a>
-    <a href="alphabet.html">🔤 Alphabet</a><a href="numbers.html">🔢 Numbers</a><a href="colors.html">🎨 Colors</a>
-    <a href="animals.html">🐾 Animals</a><a href="about.html">ℹ️ About</a><a href="contact.html">✉️ Contact</a>
-  </nav>
-</header>
-
+<header class="site-header"><div class="site-nav"><a class="brand" href="index.html"><span class="brand-icon">🌈</span><span>Little Learner</span></a><button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button></div><nav id="siteMenu" class="site-menu"><a href="index.html">🏠 Home</a><a href="#categories">📚 Categories</a><a href="about.html">ℹ️ About</a><a href="contact.html">✉️ Contact</a><a href="privacy.html">🔒 Privacy</a><a href="terms.html">📄 Terms</a></nav></header>
 <main>
-<section class="hero-home">
-  <div class="hero-orb orb-one">✦</div><div class="hero-orb orb-two">●</div>
-  <div class="hero-content">
-    <div class="welcome-pill">🌟 A happy place to learn</div>
-    <h1>Little Learner</h1>
-    <p class="hero-lead">A playful digital learning library made for curious kids and the grown-ups who guide them.</p>
-    <div class="hero-actions"><a class="primary-btn" href="#library">📚 Explore the Library</a><a class="secondary-btn" href="#popular">⭐ Start with Popular</a></div>
-    <div class="trust-row"><span>👨‍👩‍👧 Parent-friendly</span><span>📱 Mobile-ready</span><span>🧩 Learn by doing</span></div>
-  </div>
-</section>
-
-<section class="quick-panel wrap" aria-label="Quick learning links">
-  <div class="quick-title"><span>⚡</span><div><b>Quick Start</b><small>Pick a skill and jump right in</small></div></div>
-  <div class="quick-links"><a href="alphabet.html">🔤 ABC</a><a href="numbers.html">🔢 Numbers</a><a href="colors.html">🎨 Colors</a><a href="animals.html">🐾 Animals</a><a href="#library">🧠 Brain Games</a></div>
-</section>
-
-<section id="popular" class="section wrap">
-  <div class="section-title center"><span class="eyebrow">FOR TODAY</span><h2>⭐ Popular Learning Paths</h2><p>Short, familiar starting points for young learners.</p></div>
-  <div class="path-grid">
-    <a class="path-card path-a" href="alphabet.html"><span class="path-icon">🔤</span><span><b>ABC Adventure</b><small>Letters, sounds & first words</small></span><i>→</i></a>
-    <a class="path-card path-b" href="numbers.html"><span class="path-icon">🔢</span><span><b>Number Time</b><small>Counting & early math</small></span><i>→</i></a>
-    <a class="path-card path-c" href="colors.html"><span class="path-icon">🎨</span><span><b>Colors & Shapes</b><small>See, match & discover</small></span><i>→</i></a>
-    <a class="path-card path-d" href="animals.html"><span class="path-icon">🐾</span><span><b>Animal World</b><small>Names, sounds & nature</small></span><i>→</i></a>
-  </div>
-</section>
-
-<section id="library" class="library-shell">
-  <div class="wrap">
-    <div class="section-title center library-heading"><span class="eyebrow">DIGITAL EDUCATION LIBRARY</span><h2>📚 Choose a Learning Shelf</h2><p>Tap a shelf below. The page smoothly scrolls to its books — no endless clicking through menus.</p></div>
-    <div id="categoryRail" class="category-rail" aria-label="Learning categories"></div>
-    <div id="libraryGrid" class="library-grid"></div>
-  </div>
-</section>
-
-<section class="parent-section wrap">
-  <div class="parent-box"><div class="parent-icon">👨‍👩‍👧‍👦</div><div><span class="eyebrow">FOR PARENTS</span><h2>Learning that feels simple</h2><p>Use the shelves to choose a topic, then let your child explore one small activity at a time. The layout is designed to work comfortably on phones, tablets and desktops.</p></div></div>
-</section>
+<section class="hero-home"><div class="hero-orb orb-one">✦</div><div class="hero-orb orb-two">●</div><div class="hero-content"><div class="welcome-pill">🌟 A happy place to learn</div><h1>Little Learner</h1><p class="hero-lead">A playful digital library where kids can discover books, stories, quizzes, skills and activities — one topic at a time.</p><div class="hero-actions"><a class="primary-btn" href="#categories">📚 Explore Categories</a><a class="secondary-btn" href="category.html?cat=0">⭐ Start Reading</a></div><div class="trust-row"><span>👨‍👩‍👧 Parent-friendly</span><span>📱 Responsive</span><span>🧩 Learn by doing</span></div></div></section>
+<section id="categories" class="library-shell"><div class="wrap"><div class="section-title center library-heading"><span class="eyebrow">DIGITAL EDUCATION LIBRARY</span><h2>📚 Choose a Learning Category</h2><p>Tap a category to open its own book shelf. Books stay hidden here so the home page stays clean and easy to explore.</p></div><div id="categoryRail" class="category-rail category-home-grid" aria-label="Learning categories"></div></div></section>
+<section class="parent-section wrap"><div class="parent-box"><div class="parent-icon">👨‍👩‍👧‍👦</div><div><span class="eyebrow">FOR PARENTS</span><h2>Simple paths for little learners</h2><p>Choose one category, pick a book, and let your child learn through short explanations, activities, practice and quick checks. Every book opens on its own complete page.</p></div></div></section>
 </main>
-
-<footer class="site-footer"><div class="footer-grid"><div><h3>🌈 Little Learner</h3><p>Learn, practice and have fun.</p></div><div><h3>Explore</h3><p><a href="#library">Library</a><br><a href="#popular">Popular</a><br><a href="alphabet.html">Alphabet</a><br><a href="numbers.html">Numbers</a></p></div><div><h3>Parents</h3><p><a href="about.html">About</a><br><a href="contact.html">Contact</a><br><a href="privacy.html">Privacy</a><br><a href="terms.html">Terms</a></p></div></div><div class="copyright">© 2026 Little Learner · Built for curious young minds</div></footer>
-<script src="assets/app.js"></script>
-</body>
-</html>
+<footer class="site-footer"><div class="footer-grid"><div><h3>🌈 Little Learner</h3><p>Learn, practice and have fun.</p></div><div><h3>Explore</h3><p><a href="#categories">Categories</a><br><a href="category.html?cat=0">Reading Books</a><br><a href="category.html?cat=3">Alphabet</a><br><a href="category.html?cat=4">Numbers</a></p></div><div><h3>Parents</h3><p><a href="about.html">About</a><br><a href="contact.html">Contact</a><br><a href="privacy.html">Privacy</a><br><a href="terms.html">Terms</a></p></div></div><div class="copyright">© 2026 Little Learner · Built for curious young minds</div></footer>
+<script src="assets/app.js"></script></body></html>
