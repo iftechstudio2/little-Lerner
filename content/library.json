@@ -1,0 +1,25 @@
+{
+  "categories":[
+    {"id":"preschool-reading","icon":"📖","title":"Preschool Reading Books","description":"First books for little readers.","books":["My First Alphabet Book","ABC Picture Words","First Reading Words","Read With Pictures"]},
+    {"id":"kids-stories","icon":"🌙","title":"Kids Story Books","description":"Short stories with gentle learning moments.","books":["The Little Garden","The Helpful Little Bird","A Day at the Park","The Lost Toy"]},
+    {"id":"kids-quizzes","icon":"🧩","title":"Kids Quiz Books","description":"Quick questions for practice and recall.","books":["ABC Quiz Book","First Words Quiz","Numbers Quiz","Picture Quiz Book"]},
+    {"id":"alphabet-phonics","icon":"🔤","title":"Alphabet & Phonics","description":"Letters, sounds and early word building.","books":["A–Z Letter Book","Capital & Small Letters","Letter Sound Practice","Beginning Sounds"]},
+    {"id":"numbers-math","icon":"🔢","title":"Numbers & Early Math","description":"Counting and early number skills.","books":["My First Numbers","Counting Book","Number Tracing","More or Less"]},
+    {"id":"colors-shapes","icon":"🎨","title":"Colors & Shapes","description":"Visual learning through colors and shapes.","books":["My First Colors","Color Hunt","My First Shapes","Shapes Around Us"]},
+    {"id":"animals-nature","icon":"🐾","title":"Animals & Nature","description":"Vocabulary and ideas from the world around us.","books":["Animal ABC","Farm Animals","Wild Animals","Nature Words"]},
+    {"id":"writing-tracing","icon":"✏️","title":"Writing & Tracing","description":"Early pencil control and handwriting practice.","books":["ABC Tracing","Number Tracing","Lines & Curves","First Writing Words"]},
+    {"id":"brain-thinking","icon":"🧠","title":"Brain Games & Thinking","description":"Observation, matching and simple reasoning.","books":["Find the Match","Odd One Out","What Comes Next?","Memory Challenge"]},
+    {"id":"rhymes-sounds","icon":"🎵","title":"Rhymes, Songs & Sounds","description":"Playful language and listening activities.","books":["ABC Song Book","Counting Rhymes","Animal Sounds","Action Songs"]},
+    {"id":"vocabulary","icon":"🗣️","title":"Vocabulary Builder","description":"Useful everyday words for young learners.","books":["My First 50 Words","Food Words","Home Words","School Words"]},
+    {"id":"world-around-me","icon":"🌍","title":"World Around Me","description":"Familiar people, places and everyday life.","books":["My Family","My Home","My Community","My Neighborhood"]},
+    {"id":"healthy-habits","icon":"🍎","title":"Food & Healthy Habits","description":"Food vocabulary and healthy routines.","books":["Healthy Foods","My Healthy Day","Clean Hands","Brush Your Teeth"]},
+    {"id":"feelings-social","icon":"😊","title":"Feelings & Social Skills","description":"Emotions, kindness, sharing and routines.","books":["My Feelings","Kind Words","Sharing Is Caring","Taking Turns"]},
+    {"id":"safety-skills","icon":"🛡️","title":"Safety & Everyday Skills","description":"Age-appropriate safety and independence topics.","books":["Road Safety","Safe at Home","Emergency Helpers","My Daily Routine"]},
+    {"id":"little-science","icon":"🔬","title":"Little Science","description":"Curiosity-driven introductions to the world.","books":["Day & Night","Weather","Plants Grow","Animal Homes"]},
+    {"id":"creative-learning","icon":"🎭","title":"Creative Learning","description":"Drawing, imagination and creative prompts.","books":["Draw With Shapes","Color & Create","Finish the Picture","Imagine & Tell"]},
+    {"id":"digital-skills","icon":"💻","title":"Digital Learning Skills","description":"Simple parent-guided technology concepts.","books":["Mouse Basics","Keyboard Letters","Screen Smart","Digital Vocabulary"]},
+    {"id":"daily-practice","icon":"📅","title":"Daily Learning Practice","description":"Short activities for a consistent routine.","books":["5-Minute Letter Practice","5-Minute Number Practice","Picture Review","Daily Word Builder"]},
+    {"id":"learning-challenges","icon":"🏆","title":"Learning Challenges","description":"Small challenges that make practice exciting.","books":["ABC Challenge","Counting Challenge","Shape Challenge","Word Challenge"]},
+    {"id":"practice-packs","icon":"📝","title":"Printable-Style Practice","description":"Clean practice activities recreated for the web.","books":["Letter Practice Pack","Number Practice Pack","Word Practice Pack","Mixed Skills Pack"]}
+  ]
+}
