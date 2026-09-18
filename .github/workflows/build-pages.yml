@@ -19,5 +19,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public
+          git add index.html alphabet.html about.html contact.html privacy.html terms.html categories books pages 404.html robots.txt sitemap.xml assets public
           if git diff --cached --quiet; then echo "No generated changes."; else git commit -m "Auto-build Little Learner site"; git push; fi
