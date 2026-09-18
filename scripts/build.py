@@ -3,6 +3,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 PUBLIC=ROOT/"public"
+OUTPUTS=[ROOT, PUBLIC]
 CONTENT=ROOT/"content"
 SITE=json.loads((CONTENT/"site.json").read_text(encoding="utf-8"))
 LIB=json.loads((CONTENT/"library.json").read_text(encoding="utf-8"))
@@ -134,17 +135,23 @@ def shell(title,desc,body,root=""):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)}</title><meta name="description" content="{E(desc)}"><meta name="robots" content="index,follow"><link rel="stylesheet" href="{root}assets/style.css"></head><body><header class="site-header"><div class="site-nav"><a class="brand" href="{root}index.html"><span class="brand-icon">🌈</span><span>Little Learner</span></a><button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false">☰</button></div><nav id="siteMenu" class="site-menu"><a href="{root}index.html">🏠 Home</a><a href="{root}index.html#categories">📚 Categories</a><a href="{root}about.html">ℹ️ About</a><a href="{root}contact.html">✉️ Contact</a><a href="{root}privacy.html">🔒 Privacy</a><a href="{root}terms.html">📄 Terms</a></nav></header>{body}<footer class="site-footer"><div class="footer-grid"><div><h3>🌈 Little Learner</h3><p>Learn, practice and have fun.</p></div><div><h3>Explore</h3><p><a href="{root}index.html#categories">Categories</a><br><a href="{root}alphabet.html">Alphabet</a></p></div><div><h3>Parents</h3><p><a href="{root}about.html">About</a><br><a href="{root}contact.html">Contact</a><br><a href="{root}privacy.html">Privacy</a><br><a href="{root}terms.html">Terms</a></p></div></div><div class="copyright">© {SITE.get("year",2026)} Little Learner</div></footer><script src="{root}assets/app.js"></script></body></html>'''
 
 def write(rel,content):
-    p=PUBLIC/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content,encoding="utf-8")
+    for out in OUTPUTS:
+        p=out/rel
+        p.parent.mkdir(parents=True,exist_ok=True)
+        p.write_text(content,encoding="utf-8")
 
 # clean generated output only; source files remain untouched
+# The repository root is the GitHub Pages publishing source. Remove only old generated/legacy site output.
+for rel in ["index.html","category.html","book.html","about.html","contact.html","privacy.html","terms.html","alphabet.html","numbers.html","colors.html","animals.html","pages"]:
+    p=ROOT/rel
+    if p.is_dir(): shutil.rmtree(p)
+    elif p.exists(): p.unlink()
 if PUBLIC.exists():
     for p in list(PUBLIC.iterdir()):
         if p.name!=".gitkeep":
             if p.is_dir(): shutil.rmtree(p)
             else: p.unlink()
 PUBLIC.mkdir(parents=True,exist_ok=True)
-shutil.copy2(ROOT/"assets/style.css",PUBLIC/"assets/style.css")
-shutil.copy2(ROOT/"assets/app.js",PUBLIC/"assets/app.js")
 
 cat_links=[]
 book_links=[]
