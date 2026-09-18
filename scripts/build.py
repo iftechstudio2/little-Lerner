@@ -152,6 +152,9 @@ if PUBLIC.exists():
             if p.is_dir(): shutil.rmtree(p)
             else: p.unlink()
 PUBLIC.mkdir(parents=True,exist_ok=True)
+(PUBLIC/"assets").mkdir(parents=True,exist_ok=True)
+shutil.copy2(ROOT/"assets/style.css",PUBLIC/"assets/style.css")
+shutil.copy2(ROOT/"assets/app.js",PUBLIC/"assets/app.js")
 
 cat_links=[]
 book_links=[]
